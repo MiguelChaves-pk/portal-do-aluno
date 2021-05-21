@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    height: 90vh;
+    background: url('/img/bg.jpg') center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+
+.container {
+    width: 960px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+/*Título e logo*/
+.title-login {
+    width: 100%;
+    height: 120px;
+    margin-top: 150px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-login img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.title-login h1 {
+    font-size: 38px;
+    font-family: roboto, helvetica;
+    color: #fff;
+}
+
+/*Login*/
+.login {
+    display: column;
+    max-width: 100%;
+    height: 450px;
+    padding: 20px;
+    background: rgb(68, 68, 68);
+}
+
+.top-login {
+    width: 100%;
+    height: 120px;
+    background: #444;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-login-left {
+    font-family: roboto, helvetica;
+    color: white;
+    padding: 15px;
+    margin-left: 23px;
+}
+
+.top-login-left h3{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.top-login-left p {
+    font-size: 16px;
+    margin-top: 20px;
+}    
+
+.top-login-right {
+    margin-right: 25px;
+}
+
+.top-login img {
+    width: 42px;
+    height: 66px;
+}
+
+
+/*Form-login*/
+.form-login-container {
+    background: rgba(68, 68, 68, 0.932);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-login{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 340px;
+
+}
+
+.form-login input {
+    width: 100%;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+
+.form-login button[type="button"] {
+    border: none;   
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: #de615e;
+}
+
+.form-login button[type="submit"] {
+    width: 470px;
+    height: 50px;
+    margin: 20px auto 0 auto;
+    border: 3px solid #de615e;
+    background: #de615e;
+    color: #fff;
+    font-size: 16px;
+    font-family: roboto, helvetica;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.form-login button[type="button"]:hover {
+    color: white;
+    transition: 350ms;
+}
+
+.form-login button[type="submit"]:hover {
+    background: #de605eb0;
+    border: #de605eb0;
+    transition: 350ms;
+}
+
+/*Modal*/
+.bg-modal {
+    top: -100%;
+    position: fixed;
+    width: 600px;
+    height: 310px;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid black;
+    transition: 350ms;
+}
+
+.modal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.top-modal {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.info-top-modal {
+    width: 90%; 
+    display: flex;
+    justify-content: center;
+}
+
+.top-modal  h4{
+    font-size: 18px;
+    font-family: roboto, helvetica;
+    color: #888;
+    margin-left: 20px;  
+}
+
+.top-modal span {
+    font-size: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+.modal-body {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.modal-body p {
+    font-size: 16px;
+    font-family: roboto, helvetica;
+    color: #888;
+    margin-left: 20px;
+}
+
+.modal-body p input {
+    width: 250px;
+    height: 34px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 81px;
+    justify-content: flex-end;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+}
+
+.modal-footer button {
+    margin-right: 20px;
+    width: 90px;
+    height: 50px;
+    background: #de615e;
+    border: none;
+    border-radius: 5px;
+    font-family: roboto, helvetica;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-footer button:hover {
+    background: rgba(182, 63, 63, 0.856);
+    transition: 350ms;
+}
+
+
+@media (max-width: 600px)
+{
+
+    .login {
+        max-width: 360px;
+
+    }
+
+    .form-login {
+        max-width: 350px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 340px;
+    }
+
+    .form-login button[type="submit"] {
+        width: 340px;
+        height: 50px;
+        margin: 20px auto 0 auto;
+        border: 3px solid #de615e;
+        background: #de615e;
+        color: #fff;
+        font-size: 16px;
+        font-family: roboto, helvetica;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    body {
+        overflow-x: hidden;
+        height: 90vh;
+        background: url('/img/bg.jpg') center;
+        width: 100%;
+        display: flex;
+        justify-content:center;
+    }
+
+    .bg-modal {
+        max-width: 400px;
+    }
+    
+    .top-modal span {
+        font-size: 30px;
+    }
+    
+  
+}
+
+
+
+

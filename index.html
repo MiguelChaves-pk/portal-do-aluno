@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/vv.js"></script>
+    <title>Portal do Aluno</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="title-login">
+            <img src="./img/mundo.png" alt="Mundi">
+            <h1>Portal do Aluno</h1>
+        </div>
+        <div class="login">
+            <section class="top-login">
+                <div class="top-login-left">
+                    <h3>Acesse sua conta</h3>
+                    <p>Entre com seu CPF e Senha:</p>
+                </div>
+                <div class="top-login-right">
+                    <img src="./img/padlock.svg" alt="Cadeado">
+                </div>
+            </section>
+            <section class="form-login-container">
+                <form class="form-login">
+                    <input type="text" placeholder="CPF">
+                    <input type="password" placeholder="Senha">
+                    <button style="align-self:flex-end" type="button" onclick="abrirModal()">Esqueceu sua senha?</button>
+                    <button type="submit" onclick="loginFeito()">Entrar</button>
+                </form>
+            </section>
+        </div>
+
+        <div class="bg-modal" id="modal">
+            <div class="modal">
+                <div class="top-modal">
+                    <div class="info-top-modal">
+                        <h4>Esqueceu sua senha?</h4>
+                    </div>
+                    <div class="close-modal-btn">
+                        <span onclick="fecharModal()">&times;</span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Enviaremos para seu email as informações, digite seu email abaixo:</p>
+                    <p>Email:
+                        <input type="text">
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="fecharModal()">Fechar</button>
+                    <button type="button" onclick="fecharModal()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
